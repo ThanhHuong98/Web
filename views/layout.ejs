@@ -1,0 +1,66 @@
+<% include header.ejs%>
+<div class="container">
+    <h1 class="text-center" style="margin-bottom: 150px">BÉ TẬP TÍNH</h1>
+    <div class="row">
+        <div class="col-sm-8" style="background-color:white">
+            <form>
+                <div class="form-group row">
+                    <label for="inputNumber1" class="col-sm-4 col-form-label">Số thứ nhất</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputNumber1">
+                    </div>
+                </div>
+            </form>
+
+            <form>
+                <div class="form-group row">
+                    <label for="inputNumber2" class="col-sm-4 col-form-label">Số thứ hai</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="inputNumber2">
+                    </div>
+                </div>
+            </form>
+
+            <form>
+                <div class="form-group row">
+                    <label for="inputNumber2" class="col-sm-4 col-form-label">Kết quả</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="tvResult">
+                    </div>
+                </div>
+            </form>
+
+            <form>
+                <div class="form-group row">
+                    <label for="inputNumber2" class="col-sm-4 col-form-label">Thông báo</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="noti" value="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-6" style="background-color:white">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="checkAdd" value="add">Cộng</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="checkSub" value="sub">Trừ</label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-medium" id="btnAction" onclick="calculate()">Tính</button>
+                </div>
+                <div class="col-sm-6" style="background-color:white">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="checkMul" value="mul">Nhân</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id ="checkDev" value="dev">Chia</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<% include footer.ejs%>
